@@ -21,7 +21,7 @@ Socket Programming: Used for communication between clients and the server.
 Multi-threading: Allows simultaneous communication with multiple clients without blocking.
 NLP Integration: Processes user input to generate intelligent responses (simulated).
 
-📦 Dependencies
+Dependencies:
 
 This project requires the following:
 
