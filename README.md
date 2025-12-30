@@ -1,11 +1,11 @@
 AI Chat Application with Socket Programming and Multi-threading in C++
 
-📚 Project Overview
+Project Overview:
 This project is an AI-powered real-time chat application that allows multiple users (500+) to communicate with each other through a server-client architecture. The application uses C++ and employs socket programming and multi-threading to manage multiple client connections simultaneously.
 
 The application integrates a basic Natural Language Processing (NLP) functionality to simulate intelligent responses to user input, which can be expanded with more advanced NLP models (e.g., OpenAI's GPT).
 
-🧑‍💻 Project Structure
+Project Structure:
 
 /chat_app
 ├── server.cpp               # The server code handling multiple clients
@@ -14,7 +14,7 @@ The application integrates a basic Natural Language Processing (NLP) functionali
 ├── Makefile                 # Makefile for building the project
 └── README.md                # Project documentation
 
-⚙️ Technologies Used
+Technologies Used:
 
 C++: Main programming language for creating the application.
 Socket Programming: Used for communication between clients and the server.
@@ -30,7 +30,7 @@ A Unix-based system (Linux or macOS) for socket programming (or Windows with sui
 POSIX sockets for server-client communication.
 Threading support (<thread>) in C++.
 
-📥 How to Set Up and Run the Project
+Set Up Steps and Running the Project
 
 1. Clone the repository
 
@@ -92,7 +92,7 @@ The client then waits for a response from the server and displays it to the user
 
 Each client connection is handled in a separate thread. This allows the server to manage multiple clients simultaneously without blocking any one client. When a message is received from one client, it is processed independently of other clients.
 
-🧠 NLP Integration:
+NLP Integration:
 
 The NLP_Integration.h file contains a basic simulated Natural Language Processing (NLP) function. In the current setup, it simply returns a few hardcoded responses based on user input.
 
@@ -102,14 +102,14 @@ If the user types "hello", the response is "Hi there! How can I assist you?"
 If the user types "bye", the response is "Goodbye!"
 This functionality can be replaced or enhanced by integrating real NLP models or APIs like OpenAI's GPT or any other conversational AI model.
 
-🏗️ How to Expand the NLP:
+Expanding the NLP:
 To use a more advanced NLP model, you can:
 
 Replace the simple NLP logic in processNLP with API calls to an external service (e.g., OpenAI).
 Integrate a third-party NLP library like spaCy or NLTK in C++.
 Add more complex responses, such as handling commands, storing conversation history, or integrating more sophisticated language understanding features.
 
-🔧 Key Functions and Files Explained
+Key Functions and Files Explained
 
 server.cpp (Main Server Logic)
 
@@ -127,7 +127,7 @@ NLP_Integration.h (Simulated NLP)
 A basic function to simulate natural language processing for incoming messages.
 Can be expanded with real NLP models for more intelligent responses.
 
-📈 Future Enhancements
+Future Enhancements:
 
 Real NLP Integration: Integrate with a real NLP API, such as OpenAI GPT, for better conversation flow.
 GUI Support: Add a graphical user interface (GUI) using a library like Qt or SFML for a more interactive user experience.
@@ -135,6 +135,6 @@ Security Enhancements: Implement SSL/TLS encryption for secure communication bet
 Scalability: Improve server architecture for handling thousands of simultaneous clients by implementing load balancing or distributed systems.
 Persistent Chat History: Store conversations in a database (e.g., SQLite) to persist chat history.
 
-📝 Conclusion
+Conclusion:
 
 This project demonstrates the use of C++ for building a simple yet powerful chat application with multi-threaded socket communication. The integration of NLP provides intelligent responses, and the ability to handle many users makes it scalable for real-time applications.
